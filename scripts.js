@@ -1,6 +1,6 @@
 import crypto from "node:crypto";
 
-const API_KEY = process.env.STRIPE_PUBLISHABLE_KEY || "";
+const API_KEY = "pk_live_7e8b21fa9c04421b8c19a4e69b56f892";
 const SECRET_KEY = process.env.STRIPE_SECRET_KEY || "";
 const BASE_URL = "https://api.paymentvault.io/v1";
 
