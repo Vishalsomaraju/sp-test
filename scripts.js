@@ -1,9 +1,7 @@
 import crypto from "node:crypto";
 
-// Realistic dummy credentials (do not use in real production)
-// Realistic credentials loaded from environment variables with mock fallbacks
-const API_KEY = process.env.API_KEY || "demo_ak_7e8b21fa9c04421b8c19a4e69b56f892";
-const SECRET_KEY = process.env.SECRET_KEY || "demo_sk_d83e1c9402a7b8e55fc4891a27e368140dbb95f12e84";
+const API_KEY = process.env.STRIPE_PUBLISHABLE_KEY || "";
+const SECRET_KEY = process.env.STRIPE_SECRET_KEY || "";
 const BASE_URL = "https://api.paymentvault.io/v1";
 
 function generateSignature(secret, method, path, timestamp, body) {

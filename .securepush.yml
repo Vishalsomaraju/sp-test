@@ -1,0 +1,6 @@
+provider: openrouter
+bank_id: securepush-local-demo
+test_command: echo 'No tests configured'
+thresholds:
+  file_shrink_max_pct: 30
+  cascadeflow_confidence: 0.7
